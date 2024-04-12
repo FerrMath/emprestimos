@@ -147,11 +147,14 @@ img {
 }
 
 #main_footer{
+
 	background-color: grey;
 	padding: 1rem;
 	display: flex;
+	width: 100%;
 	justify-content: space-around;
 	align-items: center;
+
 }
 
 .social_midias {
@@ -229,17 +232,16 @@ img {
 }
 
 .ctrl_simulador {
-	margin-block: 2rem;
 	display: grid;
-	grid-template-columns: 1fr 2fr;
-	gap: 1rem;
+	grid-template-columns: 1fr;
+	justify-items: center;
+	margin-block: 1rem;
 }
 
 .simulate_btn {
 	padding: 1rem 2rem;
+	width: 40%;
 	cursor: pointer;
-	align-self: center;
-	text-align: center;
 }
 
 .resultado_simulation {
@@ -248,12 +250,42 @@ img {
 	padding: 1rem;
 	border-radius: 5px;
 	flex-direction: column;
-	align-items: end;
+	align-items: center;
 }
 
 .resultado_simulation h3 {
 	margin-block: .5rem;
 	font-size: 1.3rem;
+}
+
+/* FAQ */
+.faq_container {
+	margin-block: 2rem;
+	background-color: var(--secondary-color);
+	padding: 1rem;
+	border-radius: 5px;
+	display: grid;
+	gap: 1.5rem;
+}
+
+.faq_item:hover {
+	cursor: pointer;
+}
+
+.faq_item{
+	display: grid;
+}
+
+.faq_item>h3::before{
+	content: "- ";
+}
+
+.faq_item.hidden>h3::before{
+	content: "+ ";
+}
+
+.faq_item.hidden>p{
+	display: none;
 }
 
 .bcm_client_box {
@@ -274,6 +306,7 @@ img {
 
 .register_hero {
 	margin-block: 2rem;
+	/* height: 65vh; */
 }
 
 .register_form_container{
