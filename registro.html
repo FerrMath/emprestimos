@@ -36,6 +36,53 @@
         </a>
     </header>
 
+    <!-- Main -->
+    <section class="register_hero hero w80">
+        <p class="main_description" style="text-align: center; font-size: 1.1rem;">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Eius veritatis, rerum iusto error maiores
+            corrupti
+            possimus saepe est, ut, necessitatibus sequi nisi reiciendis?<br>Esse voluptatem aliquid, est placeat soluta
+            obcaecati?
+        </p>
+
+        <div class="register_form_container">
+            <h2 style="text-align: center;">Entre em contato!</h2>
+            <form id="register_form">
+                <div class="form_entrys">
+                    <div class="form_inputs">
+                        <div class="form_input">
+                            <label for="name">Nome:</label>
+                            <input type="text" name="name" id="name" required placeholder="Seu nome completo">
+                        </div>
+                        <div class="form_input">
+                            <label for="email">E-mail:</label>
+                            <input type="text" name="email" id="email" required placeholder="Exemple@email.com">
+                        </div>
+                        <div class="form_input">
+                            <label for="phone">Telefone:</label>
+                            <input type="text" name="phone" id="phone" required placeholder="41912345678">
+                        </div>
+                        <div class="form_input">
+                            <label for="service">Tipo de serviço:</label>
+                            <select name="service" id="service">
+                                <option value="pessoal">Emprestimo Pessoal</option>
+                                <option value="consignado">Emprestimo Consignado</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form_checkbox">
+                        <p style="text-align: center;">Aposentado?<br>Receba ofertas especiais!</p>
+                        <input type="checkbox" name="retired" id="retired">
+                    </div>
+                </div>
+                <div class="form_submit">
+                    <button type="submit" id="submit_register_form_btn" class="btn w_center">Enviar</button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
     <footer id="main_footer">
         <div class="social_midias">
             <a href="#"><i class="devicon-facebook-plain" style="font-size: 2rem;"></i></a>
